@@ -44,3 +44,11 @@ use command: helm template webapp (webapp name of help template created above).
 2. pip install -r requirement.txt and then run python app.py locally. OR 
 3. Build docker image using above docker commands. OR
 4. Use Docker compose or Kuberentes or Helm to run.
+
+## Deploy the flask app with AWS Elastic beanstalk
+1. Change your app.py name to application.py and change every varible to applciation which was app before.
+2. add folder .ebextensions and inside it add a file python.config file.
+3. to deploy the app in aws make a .zip folder of only neccessary files like requirement.txt, this .ebsextension folder , application.py and template folder in our case (in other case might be somone have static folder as well used by app)
+4. Go on aws console and select servcie elastic beanstalk and click on create application.
+5. put values and under application code section click upload sourcecode and upload your .zip folder here and click create.
+6. Voila now app is gonna be built and you can use it.
