@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -18,4 +19,26 @@ spec:
       - name: webapp
         image: webapp:1.0
         ports:
+=======
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: python-webapp
+  labels:
+    app: web
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+      - name: webapp
+        image: webapp:1.0
+        ports:
+>>>>>>> d83126c3012be112079d0958e1c9a2f2292efc01
         - containerPort: 5000
