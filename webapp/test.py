@@ -1,8 +1,6 @@
 import boto3
 import json
 s3_client = boto3.client('s3',
-    aws_access_key_id='AKIAXQLURLRJVWVPK7HC',
-    aws_secret_access_key='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',
     # aws_session_token=SESSION_TOKEN
     )
 b=[]
