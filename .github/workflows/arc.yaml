@@ -14,3 +14,13 @@ jobs:
       - uses: actions/checkout@v2
       - name: Display text
         run: echo Github self-hosted runner working
+  package-check:
+    runs-on: [ubuntu-4g]
+    steps:
+      - name: check python version
+        run: python --version
+      - name: check node version
+        run: node --version
+      - name: check java --version
+        uses: actions/setup-java@v4.0.0
+        
