@@ -7,7 +7,7 @@ on:
 jobs:
   # Contains a single job called "test"
   test:
-    runs-on: [self-hosted]
+    runs-on: ubuntu-4g-vd52c-runner-8jzsp
     steps:
       # Checks out the repository under $GITHUB_WORKSPACE
       - uses: actions/checkout@v2
